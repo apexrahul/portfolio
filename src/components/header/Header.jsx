@@ -1,25 +1,28 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from "../../assets/me.png"
-import HeaderSocials from "./HeaderSocials"
+import ME from "../../assets/farewellBg.jpg"
+
 
 const Header = () => {
   return (
-    <header>
+    <header data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="2000">
+      <div className="intro-board">
+        <h1>{"< Rahul Pant />"}</h1>
+        </div>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Rahul Pant</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <div className="content-about-me">
+        <h1>Fullstack Developer.</h1>
+        <p>Hello! My name is Rahul Pant, a self-taught programmer and I'm a Dehradun based freelancer.I like to craft solid and scalable fullstack
+         products with great user experiences.</p>
         <CTA />
-        <HeaderSocials />
-
+        </div>
+      
          <div className="me">
           <img src={ME} alt ="me" />
          </div>
-         <a href="#contact" className="scroll__down">Scroll Down</a> 
-
       </div>
+
     </header>
   )
 }

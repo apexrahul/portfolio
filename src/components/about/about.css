@@ -45,7 +45,7 @@
 
 .about__card:hover {
     background : transparent ;
-    border-color : var(--color-primary-variant);
+    border-color : var(--color-bg-yellow);
     cursor : default ;
 }
 
@@ -89,6 +89,9 @@
 
 /* *******************MEDIA QUERIES (SMALL DEVICE) */
 @media screen and (max-width: 600px) {
+    #contact{
+        width: 134vw;
+    }
     .about__me {
         width : 65% ;
         margin: 0 auto 3rem ;

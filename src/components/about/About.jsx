@@ -23,26 +23,26 @@ const About = () => {
             <articles className="about__card">
             <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>Beginner</small>
             </articles>
 
             <articles className="about__card">
             <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>0</small>
             </articles>
 
             <articles className="about__card">
             <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>30+ completed</small>
+              <small>10+ completed</small>
             </articles>
           </div>
 
           <p>
-          Lorem Ipsum is simply dummy text of the printing 
-          and typesetting industry. Lorem Ipsum has been the
-           industry's standard dummy text ever since the 1500s, 
+          A man without a CS Degree. Started coding for fun and cool, then just got onto it and want to become Web Developer.
+          Coding Bootcamp and Youtube sharping my skills as a Developer.
+          
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>

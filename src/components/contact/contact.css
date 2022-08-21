@@ -1,3 +1,7 @@
+#contact{
+    background-color: var(--color-light);
+    margin-top:30px;
+}
 .container.contact-container{
     width:58%;
     display: grid;
@@ -19,8 +23,9 @@
 }
 
 .contact-option:hover{
+    color: var(--color-bg-yellow);
     background: transparent;
-    border-color: var(--color-primry-variant);
+    border-color: var(--color-bg-yellow);
 }
 
 .contact-option-icon{
@@ -61,7 +66,14 @@ input, textarea{
 
 /* *******************MEDIA QUERIES (SMALL DEVICE) */
 @media screen and (max-width: 600px) {
+    #contact{
+        width: 120%;
+    }
      .container.contact-container{
         width: var(--container-width-sm);
+     } 
+     .contact-option{
+        position: relative;
+        left:2rem;
      }
 }

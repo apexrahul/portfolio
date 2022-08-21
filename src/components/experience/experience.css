@@ -2,13 +2,20 @@
 display : grid ;
 grid-template-columns: 1fr 1fr;
 gap : 2rem ;
+box-sizing: content-box;
+}
+
+#experience h5, #experience h2{
+    color: var(--color-bg-blue);
+    padding:10px;
+    font-weight: 500;
 }
 
 .experience-container > div{
     padding : 2.4rem 5rem;
     border-radius : 2rem;
     border : 1px solid transparent;
-    background :var(--color-bg-variant);
+    background :var(--color-bg-yellow);
     transition: var(--transition);
 }
 
@@ -16,12 +23,13 @@ gap : 2rem ;
     background: transparent;
     border-color : var(--color-primary-variant);
     cursor: default;
+    color: var(--color-bg-yellow)
 }
 
 .experience-container > div h3{
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--color-primary);
+    color: var(--color-bg-blue);
 }
 
 .experience-content{
@@ -38,7 +46,7 @@ gap : 2rem ;
 
 .experience-detail-icon{
     margin-top: 5px;
-    color: var(--color-primary);
+    color: var(--color-bg-blue);
 }
 
 /* *******************MEDIA QUERIES (MEDIUM DEVICE) */
@@ -57,6 +65,9 @@ gap : 2rem ;
 
 /* *******************MEDIA QUERIES (SMALL DEVICE) */
 @media screen and (max-width: 600px) {
+    #experience{
+        width: 125%;
+    }
     .experience-container{
         gap: 1rem;
     }

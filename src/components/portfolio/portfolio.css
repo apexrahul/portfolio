@@ -1,15 +1,34 @@
+#portfolio{
+    background: var(--color-bg-blue);
+    color: var(--color-bg-yellow);
+    height: 100%;
+    box-sizing: content-box;
+}
+#portfolio h5, #portfolio h2{
+    color: var(--color-bg-yellow);
+    font-weight: 500;  
+}
+.portfolio-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:3rem;
+}
 .portfolio-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    padding: 1rem 0 7rem 0;
+    margin-top: 2rem;;
 }
 
 .portfolio-item{
-    background: var(--color-bg-variant);
+    background:var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    backdrop-filter: 20;
 }
 
 .portfolio-item:hover{
@@ -44,6 +63,10 @@
 
 /* *******************MEDIA QUERIES (SMALL DEVICE) */
 @media screen and (max-width: 600px) {
+    #portfolio{
+        width: 133%;
+        margin-top: 4rem;
+    }
     .portfolio-container{
         grid-template-columns:1fr;
         gap: 1rem; 

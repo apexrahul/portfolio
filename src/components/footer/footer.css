@@ -6,7 +6,7 @@ footer{
     margin-top: 7rem;
 }
 footer a{
-    color: var(--color-bg);
+    color: var(--color-bg-yellow);
 }
 
 .footer-logo{
@@ -24,6 +24,18 @@ footer a{
     margin: 0 auto 3rem;
 }
 
+.hr-line{
+    height:100px;
+    width: 100%;
+    margin-bottom: 5rem;
+   
+}
+
+.hr-line hr{
+    height: 4rem;
+    padding-left: 100px
+}
+
 .footer-socials{
    display: flex;
    justify-content: center;
@@ -32,8 +44,8 @@ footer a{
 }
 
 .footer-socials a{
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: var(--color-bg-yellow);
+    color: var(--color-bg-blue);
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;
@@ -42,20 +54,20 @@ footer a{
 
 .footer-socials a:hover{
     background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+    color: var(--color-bg-yellow);
+    border-color: var(--color-bg-yellow);
 }
 
 .footer-copyright{
-    margin-bottom: 4rem;
-    color: var(--color-bg);
+    margin: 4rem 0 10rem 0;
+    color: var(--color-bg-yellow);
 }
 
 /* *******************MEDIA QUERIES (SMALL DEVICES) */
 
 @media screen and (max-width:600px){
     footer{
-        width: 110%;
+        width: 133%;
     }
     .permalinks{
         flex-direction: column;

@@ -5,11 +5,11 @@ import {BsPatchCheckFill} from 'react-icons/bs'
 const Experience = () => {
   return (
     <section id ='experience'>
-      <h5>What Skills I have</h5>
-      <h2>My Experience</h2>
+      <h5 data-aos="fade-down" data-aos-duration="1000" >What Skills I have</h5>
+      <h2 data-aos="fade-down" data-aos-duration="1000" >My Experience</h2>
 
       <div className="container experience-container">
-        <div className="experience-frontend">
+        <div data-aos="zoom-in-down" data-aos-duration="2000" className="experience-frontend">
           <h3>Frontend Developer</h3>
           <div className="experience-content">
 
@@ -37,7 +37,7 @@ const Experience = () => {
              <articles className="experience-detail">
               <BsPatchCheckFill className="experience-detail-icon" />
               <div>
-              <h4>Bootstrap</h4>
+              <h4>Nextjs</h4>
               <small className="text-light">Experienced</small>
               </div>
              </articles>
@@ -54,7 +54,7 @@ const Experience = () => {
 
 {/*  ***************BACKEND *************************************************/}
 
-        <div className="experience-backend">
+        <div data-aos="zoom-in-up" data-aos-duration="2000" className="experience-backend">
         <h3>Backend Developer</h3>
           <div className="experience-content">
 
@@ -82,14 +82,14 @@ const Experience = () => {
              <articles className="experience-detail">
               <BsPatchCheckFill className="experience-detail-icon" />
               <div>
-              <h4>JQuery</h4>
+              <h4>Expressjs</h4>
               <small className="text-light">Experienced</small>
               </div>
              </articles>
              <articles className="experience-detail">
               <BsPatchCheckFill className="experience-detail-icon" />
               <div>
-              <h4>RESTfull API</h4>
+              <h4>jQuery</h4>
               <small className="text-light">Experienced</small>
               </div>
              </articles>
