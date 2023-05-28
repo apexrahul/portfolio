@@ -24,24 +24,24 @@ const Contact = () => {
 
       <div   className="container contact-container">
         <div data-aos="fade-down" data-aos-duration="3000" className="contact-options">
-          <article className="contact-option">
+          <div className="contact-option">
           <MdOutlineEmail className="contact-option-icon" />
             <h4>Email</h4>
             <h5>rahulpant614@gmail.com</h5>
             <a href="mailto:rahulpant614@gmail.com" target="_blank"rel="noreferrer">Send A Messsage</a>
-          </article>
-          <article className="contact-option">
+          </div>
+          <div className="contact-option">
           <RiMessengerLine className="contact-option-icon" />
             <h4>Messenger</h4>
             <h5>Apex Coding</h5>
             <a href="https://m.me/rahulpant614/" target="_blank" rel="noreferrer">Send A Messsage</a>
-          </article>
-          <article className="contact-option">
+          </div>
+          <div className="contact-option">
           <BsWhatsapp className="contact-option-icon" />
             <h4>Whatsapp</h4>
             <h5>+91 89********</h5>
             <a href="https://api.whatsapp.com/send?phone=+91-8979105848" target="_blank" rel="noreferrer">Send A Messsage</a>
-          </article>
+          </div>
         </div>
      
       { /* END OF CONTACT OPTIONS */}

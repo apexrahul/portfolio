@@ -9,10 +9,10 @@ const Footer = () => {
 
   return (
     <footer>
-       <a href="/#" className='footer-logo'>Rahul Pant</a>
+       <a href="#home" className='footer-logo'>Rahul Pant</a>
 
        <ul className='permalinks'>
-        <li><a href="/#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         {/* <li><a href="#experience">Experience</a></li> */}
         {/* <li><a href="#services">Services</a></li> */}
@@ -22,10 +22,10 @@ const Footer = () => {
        </ul>
 
        <div className="footer-socials">
-        <a data-aos="flip-left" data-aos-duration="3000" href="/https://m.me/rahulpant614/" target="_blank"><FaFacebookF /></a>
-        <a data-aos="flip-left" data-aos-duration="3000" href="/https://instagram.com/rahulpant07" target="_blank"><FiInstagram /></a>
-        <a data-aos="flip-left" data-aos-duration="3000" href="/https://www.linkedin.com/in/rahul-pant-148a77230/" target="_blank"><BsLinkedin /></a>
-        <a data-aos="flip-left" data-aos-duration="3000" href="/https://github.com/apexrahul" target="_blank"><BsGithub /></a>
+        <a data-aos="flip-left" data-aos-duration="3000" href="https://m.me/rahulpant614/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
+        <a data-aos="flip-left" data-aos-duration="3000" href="https://instagram.com/rahulpant07" target="_blank" rel="noreferrer"><FiInstagram /></a>
+        <a data-aos="flip-left" data-aos-duration="3000" href="https://www.linkedin.com/in/rahul-pant-148a77230/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+        <a data-aos="flip-left" data-aos-duration="3000" href="https://github.com/apexrahul" target="_blank" rel="noreferrer"><BsGithub /></a>
        </div>
 
        <div className="hr-line" style={{ borderTop: "2px solid #db7d0a ", }}>

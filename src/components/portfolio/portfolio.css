@@ -64,7 +64,7 @@
 /* *******************MEDIA QUERIES (SMALL DEVICE) */
 @media screen and (max-width: 600px) {
     #portfolio{
-        width: 133%;
+ 
         margin-top: 4rem;
     }
     .portfolio-container{

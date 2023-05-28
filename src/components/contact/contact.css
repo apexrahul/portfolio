@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns:30% 58%;
     gap: 12%;
+    align-items: center;
 }
 .contact-options{
     display: flex;
@@ -47,7 +48,7 @@ form{
 }
 
 input, textarea{
-    width: 100%;
+    width: 90%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
@@ -66,14 +67,7 @@ input, textarea{
 
 /* *******************MEDIA QUERIES (SMALL DEVICE) */
 @media screen and (max-width: 600px) {
-    #contact{
-        width: 120%;
-    }
      .container.contact-container{
         width: var(--container-width-sm);
      } 
-     .contact-option{
-        position: relative;
-        left:2rem;
-     }
 }

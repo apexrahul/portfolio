@@ -12,6 +12,7 @@ const App = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    AOS.init({disable: 'mobile'});
   }, []);
   return (
     <div>

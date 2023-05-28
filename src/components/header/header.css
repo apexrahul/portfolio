@@ -1,136 +1,164 @@
-header{
-    height: 80vh;
-    width: 100vw;
+header {
+    /* height: 80vh; */
     padding-top: 7rem;
     overflow: hidden;
     box-sizing: content-box;
     background: linear-gradient(to right,
-    var(--color-bg-blue) 70%,
-    var(--color-bg-blue) 0%,
-    var(--color-bg-yellow) 70%,
-    var(--color-bg-yellow) 100%
-    ) ;
+            var(--color-bg-blue) 70%,
+            var(--color-bg-blue) 0%,
+            var(--color-bg-yellow) 70%,
+            var(--color-bg-yellow) 100%);
 }
 
-.intro-board{
-    color:  var(--color-bg-yellow);
+.intro-board {
+    color: var(--color-bg-yellow);
     position: absolute;
     display: inline-block;
-    top:0;
+    top: 30px;
     margin: 20px;
 }
 
-.intro-board h1{
-     padding:  10px;
-     font-size:2rem;
-     font-style: italic;
+.intro-board h1 {
+    padding: 10px;
+    font-size: 2rem;
+    font-style: italic;
 }
 
-.content-about-me{
+.content-about-me {
     position: relative;
     text-align: left;
-    width:40%;
-    margin-top:3rem;
+    width: 50%;
+    margin-top: 4rem;
 }
-.content-about-me p{
-    margin-top:2rem;
+
+.content-about-me>div:nth-child(1) {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.content-about-me>div:nth-child(2) {
+    margin-top: 2rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.content-about-me p {
+    margin-top: 2rem;
     line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
-.content-about-me h1{
+.content-about-me h1 {
     font-weight: 800;
-    font-size:3rem;
-    color:  var(--color-bg-yellow);  
+    font-size: 3rem;
+    color: var(--color-bg-yellow);
     letter-spacing: 5px;
+    line-height: 1.3;
 }
 
-.header__container{
+.header__container {
     text-align: center;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    
+    margin-bottom: 4rem;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 /*  ********************** CTA **************************** */
-.cta{
-    margin-top: 2.5rem;
+.cta {
+    margin-top: 4rem;
     display: flex;
-    gap: 1.2rem;
+    place-content: center;
+    gap: 2rem;
 }
-.content-about-me .cta{
+
+/* .cta a:nth-child(1) {
+    margin-right: 2rem;
+} */
+
+.cta a:nth-child(2) {
+    border-color: var(--color-bg-blue);
+    color: var(--color-bg);
+}
+
+.content-about-me .cta {
     position: relative;
     text-align: left;
-    margin-top:4rem;
+    margin-top: 4rem;
 }
 
 /* ******* ME******* */
 
-.me{
-    width: 22rem;
+.me {
+    /* width: 22rem; */
     position: absolute;
-    left: calc(100% - 40%);
+    left: calc(100% - 36.5%);
+    top: 0;
     overflow: hidden;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    /* padding: 2rem 1.5rem 1.5rem 1.5rem; */
+    /* margin-top: 4rem; */
 }
 
-.me img{
+.me img {
     height: 300px;
     width: 300px;
 }
 
 /* *******************MEDIA QUERIES (MEDIUM DEVICE) */
 @media screen and (max-width: 1024px) {
-   header{
-    height:45vh;
-   }
-   .me{
-    height:15rem;
-    position: absolute;
-    left: calc(100% - 50%);
-   }
-   .content-about-me{
-    position: relative;
-    text-align: left;
-    width:50%;
-    margin-bottom:3rem;
-}
-.content-about-me h1{
-    font-weight: 600;
-    font-size:2rem;
+    header {
+        height: 45vh;
+    }
 
-}
+    .me {
+        height: 15rem;
+        position: absolute;
+        left: calc(100% - 50%);
+    }
+
+    .content-about-me {
+        position: relative;
+        text-align: left;
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .content-about-me h1 {
+        font-weight: 600;
+        font-size: 2rem;
+
+    }
 }
 
 /* *******************MEDIA QUERIES (SMALL DEVICE) */
 @media screen and (max-width: 600px) {
-    header{
+    header {
         height: 100vh;
-        width: 134%;
+
         padding-top: 7rem;
         background: linear-gradient(to bottom,
-        var(--color-bg-blue) 0%,
-        var(--color-bg-blue) 70%,
-        var(--color-bg-yellow) 70%,
-        var(--color-bg-yellow) 100%
-        );
+                var(--color-bg-blue) 0%,
+                var(--color-bg-blue) 70%,
+                var(--color-bg-yellow) 70%,
+                var(--color-bg-yellow) 100%);
     }
-    .content-about-me{
-        width:80%;
-        position: relative;
-        left:10%;
+
+    .content-about-me {
+        width: 80%;
+        left: 10%;
         justify-content: left;
         text-align: left;
         line-height: 2;
     }
-   
-    .header__container{
-        height:100vh;
+
+    .header__container {
+        height: 100vh;
     }
-    .me{
-        height: 12rem;
+
+    .me {
+        height: 20%;
         position: absolute;
-        bottom:2.5rem;
-        left:1rem;
-    } 
-} 
+        bottom: 2.5rem;
+        left: 1rem;
+    }
+}
